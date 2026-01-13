@@ -8,7 +8,7 @@ function LocationPage() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
-      "https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=v9ud983xpo";
+      "https://openapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=v9ud983xpo";
     script.async = true;
     script.onload = () => {
       const map = new window.naver.maps.Map("map", {
