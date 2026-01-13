@@ -1,0 +1,86 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Mainpage 모바일 최적화 */
+/* 전체 컨테이너 */
+.container {
+  text-align: center;
+  background: #f9f9f9;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 헤더 */
+.header {
+  padding: 10px;
+  font-size: 1.6em;
+  font-weight: bold;
+  background: #e0f0ff;
+  color: #333;
+  border-bottom: 2px solid #d0e0f0;
+}
+/* 메뉴 아이콘 영역 */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+/* 아이콘 버튼 */
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  text-decoration: none; /* Link 기본 밑줄 제거 */
+  color: inherit; /* 아이콘 색상 유지 */
+}
+.icon:hover {
+  transform: scale(1.1);
+  background: #e0f0ff;
+}
+/* 푸터 */
+.footer {
+  padding: 15px;
+  font-size: 0.9em;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+/* 반응형 (모바일 화면) */
+@media (max-width: 480px) {
+  .menu {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8em;
+  }
+  .header {
+    font-size: 1.3em;
+  }
+}
+
+/* ProgramPage.jsx webp 이미지 파일  */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* 최대 크기 제한 */
+  display: block;
+  margin: 0 auto; /* 가운데 정렬 */
+}
