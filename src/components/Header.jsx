@@ -6,30 +6,21 @@ export default function Header() {
   const navStyle = "flex-1 text-center py-2";
 
   return (
-    //     <div className="fixed bottom-0 w-full bg-white border-t flex text-sm">
-    //       {/* 헤더 */}
-    //       <div style={{ padding: "20px" }}>
-    //         {/* Header 클릭 시 메인으로 이동 */}
-    //         <h1
-    //           onClick={MainPage}
-    //           style={{ cursor: "pointer", color: "#2c3e50", marginBottom: "20px" }}
-    //         >
-    //           교회 수련회 가이드
-    //         </h1>
-    //         <p>메인 페이지에 오신 것을 환영합니다!</p>
-    //       </div>
-    //     </div>
-    //   );
-
-    <div className="fixed bottom-0 w-full bg-white border-t flex text-sm">
-      <Link
-        to="/"
-        className={`${navStyle} ${
-          pathname === "/" ? "font-bold text-blue-600" : ""
-        }`}
-      >
-        교회 수련회 가이드
-      </Link>
-    </div>
+    <Link to="/">
+      <div className="retreat-header">
+        {" "}
+        <div className="overlay">
+          {" "}
+          <h1 className="title">2026 청연부 겨울수련회</h1>{" "}
+          <h2 className="subtitle">청년이여 지금 기도하라!</h2>{" "}
+          <p className="verse">
+            {" "}
+            “새벽 아직도 밝기 전에 예수께서 일어나 나가 한적한 곳으로 가사
+            거기서 기도하시더니”
+            <br /> <span className="reference">– 마가복음 1:35</span>{" "}
+          </p>{" "}
+        </div>{" "}
+      </div>
+    </Link>
   );
 }
