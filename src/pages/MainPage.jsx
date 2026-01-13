@@ -27,6 +27,10 @@ export default function MainPage() {
           <span className="emoji">🙏</span>
           <p>공지사항</p>
         </Link>
+        <Link to="/faq" className="card">
+          <span className="emoji">🙏</span>
+          <p>공지사항</p>
+        </Link>
       </section>
     </div>
   );
