@@ -118,6 +118,16 @@ body {
   margin: 4px 0;
   color: #555;
 }
+
+/* ProgramPage.jsx webp 이미지 파일  */
+.responsive-img {
+  width: 100%;
+  height: 500px;
+  max-width: 500px; /* 최대 크기 제한 */
+  display: block;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
 .card-section {
   display: grid; /* flex 대신 grid 사용 */
   grid-template-columns: repeat(2, 1fr); /* 2열 */
@@ -126,8 +136,8 @@ body {
   margin-bottom: 40px;
 }
 .card {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -178,13 +188,4 @@ body {
   .header {
     font-size: 1.3em;
   }
-}
-
-/* ProgramPage.jsx webp 이미지 파일  */
-.responsive-img {
-  width: 100%;
-  height: auto;
-  max-width: 600px; /* 최대 크기 제한 */
-  display: block;
-  margin: 0 auto; /* 가운데 정렬 */
 }
