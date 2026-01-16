@@ -1,9 +1,17 @@
-/* Header.jsx */
+/* base */
+.base-title {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* Header.jsx START*/
 .retreat-header {
   position: relative;
   width: 100%;
-  height: 300px;
-  background: url("/public/img/26년\ 수련회\ 포스터.webp") top/cover no-repeat;
+  height: 250px;
+  background: url("/public/img/Header.webp") top/cover no-repeat;
   color: white;
   display: flex;
   align-items: center;
@@ -12,7 +20,10 @@
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
-  padding: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   text-align: center;
   border-radius: 12px;
 }
@@ -39,6 +50,47 @@
   font-size: 0.9em;
   color: #ccc;
 }
+/* Header.jsx end*/
+
+/* Navbar.css START*/
+.navbar {
+  background-color: #0a2a43; /* 어두운 청색 계열 */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-links {
+  /* display: flex; */
+  padding-top: 70px;
+  flex-wrap: wrap; /* 모바일에서 줄바꿈 가능 */
+  gap: 8px;
+}
+
+.navbar-item {
+  cursor: pointer;
+}
+
+/* 반응형 처리 */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+/* Navbar.css end*/
 
 /* src/index.css */
 body {
@@ -47,7 +99,8 @@ body {
   background: #f5faff;
 }
 .p-4 {
-  margin: 14px;
+  margin: 5px;
+  margin-bottom: 15px;
 }
 .home-container {
   display: flex;

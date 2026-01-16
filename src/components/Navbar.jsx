@@ -1,44 +1,17 @@
-// src/components/Navbar.jsx
-import { Link, useLocation } from "react-router-dom";
+// Navbar.js
+import React from "react";
 
-export default function Navbar() {
-  const { pathname } = useLocation();
-  const navStyle = "flex-1 text-center py-2";
-
+function Navbar() {
   return (
-    <div className="fixed bottom-0 w-full bg-white border-t flex text-sm">
-      <Link
-        to="/"
-        className={`${navStyle} ${
-          pathname === "/" ? "font-bold text-blue-600" : ""
-        }`}
-      >
-        Home
-      </Link>
-      <Link
-        to="/program"
-        className={`${navStyle} ${
-          pathname === "/program" ? "font-bold text-blue-600" : ""
-        }`}
-      >
-        Program
-      </Link>
-      <Link
-        to="/location"
-        className={`${navStyle} ${
-          pathname === "/location" ? "font-bold text-blue-600" : ""
-        }`}
-      >
-        Location
-      </Link>
-      <Link
-        to="/faq"
-        className={`${navStyle} ${
-          pathname === "/faq" ? "font-bold text-blue-600" : ""
-        }`}
-      >
-        FAQ
-      </Link>
-    </div>
+    <nav className="navbar">
+      <div className="navbar-logo">🏛️ 교회명칭</div>
+      <div className="navbar-links">
+        <span className="navbar-item">교회</span>
+        <span className="navbar-item">명칭</span>
+        <span className="navbar-item">📞 긴급연락처: 010-1234-5678</span>
+      </div>
+    </nav>
   );
 }
+
+export default Navbar;
