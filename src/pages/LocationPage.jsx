@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // src/pages/LocationPage.jsx
 
 /* NAVER MAP START */
-function LocationPage() {
+export default function LocationPage() {
   const lat = 37.1638328;
   const lng = 126.9128482;
   const name = "청호인재개발원";
@@ -152,4 +152,3 @@ function LocationPage() {
     </div>
   );
 }
-export default LocationPage;

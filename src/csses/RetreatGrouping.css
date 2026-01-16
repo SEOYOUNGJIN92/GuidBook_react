@@ -1,0 +1,60 @@
+.faq-container {
+  padding: 16px;
+  text-align: center;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* 탭 버튼 영역 */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9999px; /* pill 형태 */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background-color: #d5d5d5;
+}
+
+/* 활성화된 탭 */
+.tab-btn.active.group {
+  background-color: #1e90ff; /* 파란색 */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.tab-btn.active.room {
+  background-color: #2ecc71; /* 초록색 */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* 탭 이미지 */
+.tab-image {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
