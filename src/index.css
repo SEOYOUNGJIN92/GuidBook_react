@@ -10,7 +10,7 @@
 .retreat-header {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 300px;
   background: url("/public/img/Header.webp") top/cover no-repeat;
   color: white;
   display: flex;
@@ -29,25 +29,25 @@
 }
 
 .title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 1.3em;
+  font-size: 1em;
   margin-bottom: 15px;
   color: #e0f7fa;
 }
 
 .verse {
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 1.5;
   font-style: italic;
 }
 
 .reference {
-  font-size: 0.9em;
+  font-size: 0.5em;
   color: #ccc;
 }
 /* Header.jsx end*/
