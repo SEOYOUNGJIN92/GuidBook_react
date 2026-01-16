@@ -17,7 +17,7 @@ function LocationPage() {
       // 1. 지도 생성 (Zoom 변경가능 )
       const map = new window.naver.maps.Map("map", {
         center: new window.naver.maps.LatLng(lat, lng),
-        zoom: 20,
+        zoom: 18,
         mapTypeControl: true, // 지도 타입 선택 버튼
         zoomControl: true, // 줌 컨트롤 버튼
       });
@@ -47,10 +47,11 @@ function LocationPage() {
       window.addEventListener("blur", () => {
         clearTimeout(timeout);
       });
-    } else {
-      // PC 환경에서는 바로 웹 URL로 이동
-      window.location.href = webUrl;
     }
+    //  else {
+    //   // PC 환경에서는 바로 웹 URL로 이동
+    //   window.location.href = webUrl;
+    // }
   }
 
   return (
@@ -64,7 +65,7 @@ function LocationPage() {
         id="map"
         style={{
           width: "100%",
-          height: "60vh",
+          height: "30vh",
           borderRadius: "8px",
           border: "1px solid #ccc",
         }}

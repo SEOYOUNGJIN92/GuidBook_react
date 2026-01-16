@@ -23,9 +23,9 @@ export default function MainPage() {
           <span className="emoji">🍽️</span>
           <p>수련회 위치</p>
         </Link>
-        <Link to="/faq" className="card">
-          <span className="emoji">🙏</span>
-          <p>공지사항</p>
+        <Link to="/room" className="card">
+          <span className="emoji">🏠</span>
+          <p>조 & 방배정</p>
         </Link>
         <Link to="/faq" className="card">
           <span className="emoji">🙏</span>
