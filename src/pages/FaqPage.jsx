@@ -2,9 +2,7 @@
 export default function FaqPage() {
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold mb-4">
-        📋 청년 2부 수련회 최종 공지 (수정본)
-      </h1>
+      <h1 className="text-xl font-bold mb-4">📋 청년 2부 수련회 최종 공지</h1>
 
       <h2 className="font-semibold mb-2">공지사항</h2>
 
@@ -29,9 +27,9 @@ export default function FaqPage() {
           감사하겠습니다.
         </li>
         <li>
-          📍 <strong>문의사항</strong>
+          📞 <strong>긴급연락처</strong>
           <br />
-          010-xxxx-xxxx (행정국장)
+          010-0123-4569 (이시황 목사님)
         </li>
       </ul>
     </div>
