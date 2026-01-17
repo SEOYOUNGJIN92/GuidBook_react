@@ -59,6 +59,7 @@ export default function InstallPopup() {
     const closed = localStorage.getItem("installPopupClosed");
     if (!closed) {
       setShow(true);
+      localStorage.setItem("installPopupShown", "true");
     }
   }, []);
 
