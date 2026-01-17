@@ -12,6 +12,9 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <Router>
+      {/* 홈 화면 추가 안내 배너 */}
+      <InstallBanner />
+
       {/* 상단 헤더 */}
       <Header />
 
