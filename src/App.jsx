@@ -6,6 +6,7 @@ import FaqPage from "./pages/FaqPage";
 import RoomPage from "./pages/Retreat Grouping List";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import InstallBanner from "./pages/InstallBanner ";
 import { Link } from "react-router-dom";
 
 function App() {
